@@ -15,8 +15,8 @@
 			<a href="">游戏中心</a>
 			<a href="">直播</a>
 			<a href="">手机端</a>
-			<input class="btn btn-info" type="button" value="登陆">
-			<input class="btn btn-info" type="button" value="注册">
+			<input class="btn btn-info" id="loginH" type="button" value="登陆">
+			<input class="btn btn-info" id="regH" type="button" value="注册">
 		</div>
 	</div>
 	<div class="b-top">
@@ -114,6 +114,15 @@
 	</div>
 	</div>
 	<script type="text/javascript">
+	function lore(){
+		document.getElementById("loginH").onclick = function(){
+			window.location.href = "login.html";
+		}
+		document.getElementById("regH").onclick = function(){
+			window.location.href = "register.html";
+		}
+	}
+	lore();
 		function page1(){
 			var oscroll = document.getElementById("page");
 			var num = Math.ceil(oscroll.children.length/10);
